@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" data-i18n="description" content="中国高品质紧固件制造商，提供螺栓、螺钉、铆钉及定制紧固件。">
+  <meta name="keywords" data-i18n="keywords" content="紧固件, 螺栓, 螺钉, 铆钉, 定制紧固件, 制造商">
+  <meta name="author" data-i18n="author" content="厦门小小螺丝有限公司">
+  <title data-i18n="title">紧固件制造商 | 高品质螺栓与螺钉 | 厦门小小螺丝有限公司</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header style="display: flex; justify-content: space-between; align-items: center; padding: 10px 300px 10px 400px;">
+  <!-- 左侧 Logo 和公司名称 -->
+  <div style="display: flex; align-items: center;">
+    <div>
+      <h1 style="margin: 0;" data-i18n="name_top">厦门小小螺丝有限公司</h1>
+      <p style="margin: 0; padding: 6px;font-size: 24px;">Xiamen Xiaoxiao Screw Co., Ltd.</p>
+    </div>
+  </div>
+  
+  <!-- 右侧社交媒体图标 -->
+  <div style="display: flex; gap: 15px;">
+    <a href="#" style="display: inline-block;">
+      <img src="img/facebook-icon.png" alt="Facebook" style="width: 50px; height: 50px;">
+    </a>
+    <a href="#" style="display: inline-block;">
+      <img src="img/twitter-icon.png" alt="twitter" style="width: 50px; height: 50px;">
+    </a>
+		<a href="#" style="display: inline-block;">
+     <img src="img/tiktok.jpg" alt="tiktok-icon" style="width: 50px; height: 50px;">
+    </a>
+	    <a href="#" style="display: inline-block;">
+     <img src="img/Instagram-icon.png" alt="Instagram" style="width: 50px; height: 50px;">
+    </a>
+    <a href="#" style="display: inline-block;">
+     <img src="img/whatsapp-icon.png" alt="WhatsApp" style="width: 50px; height: 50px;">
+    </a>
+  </div>
+<div class="language-selector">
+<select id="languageSelector" onChange="setLanguage(this.value)">
+    <option value="zh-CN">简体中文</option>
+    <option value="zh-TW">繁體中文</option>
+    <option value="en">English</option>
+    <option value="ms">Bahasa Malaysia</option>
+</select>
+</div>
+
+
+</header>
+
+
+<nav>
+  <ul>
+    <li><a href="#home" data-i18n="nav_home">首页</a></li>
+    <li><a href="#about-company" data-i18n="nav_about">关于公司</a></li>
+    <li><a href="#categories" data-i18n="nav_categories">产品分类</a></li>
+    <li><a href="#our-products" data-i18n="nav_products">我们产品</a></li>
+    <li><a href="#contact" data-i18n="nav_contact">联系我们</a></li>
+  </ul>
+</nav>
+
+<section class="hero" id="home">
+  <h1 data-i18n="hero_title">小小螺丝钉 祝您事业兴</h1>
+  <p data-i18n="hero_subtitle">您值得信赖的螺栓、螺钉、铆钉及定制零件合作伙伴</p>
+</section>
+
+<section class="about-company" id="about-company">
+  <div class="about-text">
+    <h2 data-i18n="about_title">关于我们</h2>
+    <p data-i18n="about_text">厦门小小螺丝有限公司于1993年在福建省厦门市集美区金辉路投资兴办，是一家专业从事紧固件研发、生产与销售的企业。我们致力于为全球客户提供最优质的螺栓、螺钉、铆钉及定制紧固件解决方案，以卓越的品质和服务赢得客户信赖。</p>
+  </div>
+</section>
+<section class="categories-intro" id="categories">
+  <h2 data-i18n="nav_categories">产品分类</h2>
+  <p data-i18n="categories_text">我们提供多种类型的紧固件，适用于不同行业和需求。无论是标准件还是定制件，我们都能为您提供最佳解决方案。</p>
+  <div class="product-cards">
+    <div class="product-card" onClick="changeProducts('car')">
+      <img src="img/product1.jpg" alt="汽配类">
+      <div class="card-title" data-i18n="nav_car">汽配类</div>
+    </div>
+    <div class="product-card" onClick="changeProducts('bathroom')">
+      <img src="img/product2.jpg" alt="卫浴类">
+      <div class="card-title" data-i18n="nav_bath">卫浴类</div>
+    </div>
+    <div class="product-card" onClick="changeProducts('sports')">
+      <img src="img/product3.jpg" alt="运动器材类">
+      <div class="card-title" data-i18n="nav_sports">运动器材类</div>
+    </div>
+    <div class="product-card" onClick="changeProducts('furniture')">
+      <img src="img/product4.jpg" alt="家具类">
+      <div class="card-title" data-i18n="nav_furniture">家具类</div>
+    </div>
+    <div class="product-card" onClick="changeProducts('electronics')">
+      <img src="img/product5.jpg" alt="电子电器类">
+      <div class="card-title" data-i18n="nav_electronics">电子电器类</div>
+    </div>
+    <div class="product-card" onClick="changeProducts('machinery')">
+      <img src="img/product6.jpg" alt="车床类">
+      <div class="card-title" data-i18n="nav_machinery">车床类</div>
+    </div>
+</div>
+</section>
+<section class="our-products" id="our-products">
+  <h2 data-i18n="our-products">产品中心</h2>
+  <div class="our-product-cards">
+    <div class="our-product-card"><a id="link1" href="img/our-product1.jpg" target="_blank"><img id="product1" src="img/our-product1.jpg" alt="螺钉"></a><div class="our-card-title" id="title1" data-i18n="our-products_nav1">螺钉</div></div>
+    <div class="our-product-card"><a id="link2" href="img/our-product2.jpg" target="_blank"><img id="product2" src="img/our-product2.jpg" alt="螺栓"></a><div class="our-card-title" id="title2" data-i18n="our-products_nav2">螺栓</div></div>
+    <div class="our-product-card"><a id="link3" href="img/our-product3.jpg" target="_blank"><img id="product3" src="img/our-product3.jpg" alt="螺丝"></a><div class="our-card-title" id="title3" data-i18n="our-products_nav3">螺丝</div></div>
+    <div class="our-product-card"><a id="link4" href="img/our-product4.jpg" target="_blank"><img id="product4" src="img/our-product4.jpg" alt="螺母"></a><div class="our-card-title" id="title4" data-i18n="our-products_nav4">螺母</div></div>
+    <div class="our-product-card"><a id="link5" href="img/our-product5.jpg" target="_blank"><img id="product5" src="img/our-product5.jpg" alt="垫圈"></a><div class="our-card-title" id="title5" data-i18n="our-products_nav5">垫圈</div></div>
+    <div class="our-product-card"><a id="link6" href="img/our-product6.jpg" target="_blank"><img id="product6" src="img/our-product6.jpg" alt="别针"></a><div class="our-card-title" id="title6" data-i18n="our-products_nav6">别针</div></div>
+    <div class="our-product-card"><a id="link7" href="img/our-product7.jpg" target="_blank"><img id="product7" src="img/our-product7.jpg" alt="组合件"></a><div class="our-card-title" id="title7" data-i18n="our-products_nav7">组合件</div></div>
+    <div class="our-product-card"><a id="link8" href="img/our-product8.jpg" target="_blank"><img id="product8" src="img/our-product8.jpg" alt="定制品"></a><div class="our-card-title" id="title8" data-i18n="our-products_nav8">定制品</div></div>
+    </div>
+  </div>
+</section>
+<!-- 新增的“为什么选我们”部分 -->
+<section class="why-choose-us" id="why-choose-us">
+  <h2 data-i18n="why_choose_us">为什么选择我们</h2>
+  <div class="content">
+    <div class="item">
+      <img src="img/choose-us01.jpg" alt="工厂实力">
+      <h3 data-i18n="why1_title">工厂实力</h3>
+      <p data-i18n="why1_description">自有厂房，集研发、生产、销售为一体的专业紧固件制造商。</p>
+    </div>
+    <div class="item">
+      <img src="img/choose-us02.jpg" alt="行业经验">
+      <h3 data-i18n="why2_title">行业经验</h3>
+      <p data-i18n="why2_description">30多年行业经验，采用高品质的材料和制造工艺，深耕市场。</p>
+    </div>
+    <div class="item">
+      <img src="img/choose-us03.jpg" alt="价格优势">
+      <h3 data-i18n="why3_title">价格优势</h3>
+      <p data-i18n="why3_description">具有竞争力的定价，会是您在紧固件行业中最佳的选择。</p>
+    </div>
+  </div>
+</section>
+
+<section class="production-equipment" id="production-equipment">
+  <h2 data-i18n="equipment_title">生产设备</h2>
+  <p class="equipment-description" data-i18n="equipment_text">我们拥有先进的生产设备，确保高效、高质量的生产能力。</p>
+  <div class="equipment-cards">
+    <div class="equipment-card">
+      <img src="img/equipment1.jpg" alt="生产设备1">
+      <h3 data-i18n="nav_equipment1">生产设备 1</h3>
+    </div>
+    <div class="equipment-card">
+      <img src="img/equipment2.jpg" alt="生产设备2">
+      <h3 data-i18n="nav_equipment2">生产设备 2</h3>
+    </div>
+    <div class="equipment-card">
+      <img src="img/equipment3.jpg" alt="生产设备3">
+      <h3 data-i18n="nav_equipment3">生产设备 3</h3>
+    </div>
+    <div class="equipment-card">
+      <img src="img/equipment4.jpg" alt="生产设备4">
+      <h3 data-i18n="nav_equipment4">生产设备 4</h3>
+    </div>
+  </div>
+</section>
+<section class="office-environment" id="office-environment">
+  <h2 data-i18n="office_title">办公环境</h2>
+  <p class="environment-description" data-i18n="office_text">我们拥有现代化的办公环境，致力于为员工提供一个舒适和高效的工作空间。</p>
+  <div class="environment-cards">
+    <div class="environment-card">
+      <img src="img/office1.jpg" alt="办公环境1">
+      <h3 data-i18n="nav_office1">办公室 1</h3>
+    </div>
+    <div class="environment-card">
+      <img src="img/office2.jpg" alt="办公环境2">
+      <h3 data-i18n="nav_office2">办公室 2</h3>
+    </div>
+    <div class="environment-card">
+      <img src="img/office3.jpg" alt="办公环境3">
+      <h3 data-i18n="nav_office3">办公室 3</h3>
+    </div>
+    <div class="environment-card">
+      <img src="img/office4.jpg" alt="办公环境4">
+      <h3 data-i18n="nav_office4">办公室 4</h3>
+    </div>
+  </div>
+</section>
+<section id="contact" style="padding: 2px 0px 28px 0px; background-color: #f4f4f4;">
+    <div class="container">
+        <h2 style="text-align: center; font-size: 2rem; margin-bottom: 30px;" data-i18n="contact_us">联系我们</h2>
+        <div class="row" style="display: flex; justify-content: center; align-items: flex-start; gap: 80px;">
+            <!-- 左侧文字信息 -->
+            <div class="col-md-5" style="text-align: left; max-width: 500px;">
+                <h4 data-i18n="contact_address_title">公司地址</h4>
+                <p data-i18n="contact_name">厦门小小螺丝有限公司</p>
+                <p data-i18n="contact_address">地址：福建省厦门市集美区后溪金辉路24号小小螺丝有限公司</p>
+                <h4 data-i18n="contact_us">联系方式</h4>
+                <p data-i18n="contact_email">邮箱：info@xiaoxiaoscrew.com</p>
+                <p data-i18n="contact_wechat">微信：xiaoxiaoscrew</p>
+                <p data-i18n="contact_whatsapp">WhatsApp：+86 123 456 789</p>
+            </div>
+			    <!-- 二维码区域 -->
+    <div class="qr-code-container">
+    <img src="img/wechat-qr.jpg" alt="微信二维码" class="qr-image">	
+	 <p class="qr-text">WeChat</p>	
+    <img src="img/whatsapp-qr.jpg" alt="WhatsApp 二维码" class="qr-image">
+	 <p class="qr-text">WhatsApp</p>
+    </div>
+            <!-- 右侧地图容器 -->
+<div id="map-container" style="width: 50%; height: 300px; border-radius: 8px; overflow: hidden;">
+    <p style="text-align:center;" data-i18n="map">正在加载地图...</p>
+</div>
+        </div>
+    </div>
+</section>
+<footer>
+  <p data-i18n="copyright">&copy; 2025 厦门小小螺丝有限公司. 版权所有.</p>
+</footer>
+<!-- 回到顶部按钮 -->
+<button id="backToTop" onClick="scrollToTop()">
+    ▲
+</button>
+<!-- 大图预览层 -->
+<div id="imagePreview" class="image-preview">
+  <span class="close-btn" onClick="closePreview()">&times;</span>
+  <img id="previewImg" src="" alt="大图预览">
+  
+  <!-- 左右切换按钮 -->
+  <button class="prev-btn" onClick="prevImage()">&#10094;</button>
+  <button class="next-btn" onClick="nextImage()">&#10095;</button>
+</div>
+<script src="js/main.js"></script>
+<script src="js/lang.js"></script>
+</body>
+</html>
