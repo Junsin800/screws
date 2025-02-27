@@ -1,6 +1,6 @@
 @media screen and (max-width: 768px) { /* 只针对移动端 */
     body {
-        transform: scale(0.8); /* 让网页整体缩小 80% */
+        transform: scale(0.5); /* 让网页整体缩小 50% */
         transform-origin: top left; /* 确保从左上角缩放 */
         width: 125%;
     }
