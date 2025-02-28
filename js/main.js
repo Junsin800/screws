@@ -31,11 +31,25 @@ function loadBaiduMap() {
         width="100%" height="300px" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
     `;
 }
-// 执行 IP 位置检测并加载对应的地图
-document.addEventListener("DOMContentLoaded", function () {
-    detectUserLocation();
-});
 
+// **使用 IntersectionObserver 监听地图位置**
+function lazyLoadMap(loadMapFunction) {
+    let mapContainer = document.getElementById("map-container");
+
+    let observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                loadMapFunction(); // **只有滚动到地图区域时才加载**
+                observer.unobserve(mapContainer); // **加载后不再监听**
+            }
+        });
+    });
+
+    observer.observe(mapContainer);
+}
+
+// **页面加载时执行 IP 检测**
+detectUserLocation();
 
   // 产品数据
   const productData = {
