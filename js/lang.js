@@ -310,7 +310,7 @@ function applyLanguage(lang) {
 // 语言切换时调用
 function setLanguage(lang) {
     // 更新 URL，但不刷新页面
-    window.history.replaceState({}, "", `?lang=${lang}`);
+    window.location.href = `/${lang}/`;
 
     // 应用新的语言
     applyLanguage(lang);
