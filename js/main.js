@@ -128,6 +128,7 @@ function changeProducts(category) {
             let titleKey = productData[category].titles[i]; // 获取产品 ID
 
             imgElement.src = imageSrc;
+            imgElement.loading = "lazy"; // **启用懒加载**
             linkElement.href = imageSrc;
             titleElement.innerText = translations[lang][titleKey] || titleKey; // 翻译标题
         }
