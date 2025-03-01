@@ -48,7 +48,7 @@ const translations = {
         "nav_office2": "办公环境 2",
         "nav_office3": "办公环境 3",
         "nav_office4": "办公环境 4",
-        "contact_us": "联系方式",
+        "contact_us": "联系我们",
         "contact_us2": "联系方式",
         "contact_email": "邮箱：junchen@xiaoxiaoluosi.com",
         "contact_address_title": "公司地址",
